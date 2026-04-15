@@ -20,48 +20,34 @@
 .glow {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(100px);
   opacity: 0.9;
 }
 
-.glow--1 {
-  top: -22%;
-  left: 10%;
-  width: 40vw;
-  height: 40vw;
-  background: var(--color-glow-melocoton);
-}
-
-.glow--2 {
-  top: -22%;
-  left: 45%;
-  width: 40vw;
-  height: 40vw;
-  background: var(--color-glow-morados);
-}
 .hero__info {
   padding: 0.5rem 1rem;
 }
 .hero__info h2 {
   font-size: 3rem;
+  color: #ccc;
 }
 
 .hero__info__name {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 0.2rem 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(193, 255, 114, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 50px;
 }
 .hero__info__name svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.2rem;
+  height: 1.2rem;
   color: var(--color-secondary);
 }
 .title__green {
@@ -69,22 +55,21 @@
   font-weight: bold;
 }
 .badge-tech {
-  background-color: var(--color-primary);
   color: var(--color-secondary);
   padding: 0.1rem 1rem;
   border-radius: 0.5rem;
   display: inline-block;
-  border: 1px solid rgba(193, 255, 114, 0.3);
+  border: 2px solid rgba(193, 255, 114, 0.3);
   vertical-align: middle;
   line-height: 1.2;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .hero__info__description {
   width: 600px;
   text-align: justify;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #666;
+  color: #aaa;
 }
 .btn__cta {
   display: flex;
@@ -106,8 +91,8 @@
   cursor: pointer;
 }
 .btn__cta__dowloand svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
   transition: 0.3s;
   animation: mover 1s infinite alternate ease-in-out;
 }
@@ -139,8 +124,8 @@
 }
 
 .btn__cta__contact svg {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   transition: transform 0.3s ease;
 }
 .btn__cta__contact:hover svg {
@@ -152,7 +137,9 @@
 }
 
 .hero__img img {
-  width: 280px;
+  width: 320px;
   border-radius: 50%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.098);
+
+  /* CAMBIO AQUÍ: Usamos color-mix para dar transparencia a la variable */
+  border: 4px solid var(--color-secondary);
 }

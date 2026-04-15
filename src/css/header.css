@@ -53,16 +53,19 @@
   padding: 0.4rem;
   text-decoration: none;
   color: var(--color-primary);
+  transition: 0.4s;
 }
 .navbar__link:hover {
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  border-radius: 0.5rem;
 }
 .cta__button a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
   background: var(--color-secondary);
-  color: var(--color-);
+  color: var(--color-terceary);
   text-decoration: none;
   padding: 0.3rem 1rem;
   border-radius: 1rem;

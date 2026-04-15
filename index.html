@@ -72,8 +72,7 @@
     </header>
     <main>
       <div class="bg-glows" aria-hidden="true">
-        <div class="glow glow--1"></div>
-        <div class="glow glow--2"></div>
+        <div id="tsparticles"></div>
       </div>
       <section class="hero__container">
         <article class="hero__info">
@@ -92,7 +91,21 @@
                 d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
               />
             </svg>
-            JORGE CORRALES B.
+            JORGE CORRALES B
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.8"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+              />
+            </svg>
           </p>
           <h2><span class="badge-tech">I'm</span> a Frontend Developer</h2>
           <p class="hero__info__description">
@@ -233,5 +246,46 @@
         </form>
       </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script>
+      tsParticles.load("tsparticles", {
+        background: {
+          color: "#0d0d0d",
+        },
+        particles: {
+          number: {
+            value: 50,
+          },
+          color: {
+            value: "#c1ff72",
+          },
+          links: {
+            enable: true,
+            color: "#c1ff72",
+            distance: 250,
+            opacity: 0.3,
+          },
+          move: {
+            enable: true,
+            speed: 1,
+          },
+          size: {
+            value: 3,
+          },
+          opacity: {
+            value: 0.4,
+          },
+        },
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
