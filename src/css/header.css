@@ -65,7 +65,8 @@
   width: 100%;
 }
 
-.cta__button a {
+.cta__button a,
+.cta__button__back a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -79,12 +80,17 @@
   transition: 0.3s;
 }
 
-.cta__button svg {
+.cta__button svg,
+.cta__button__back svg {
   width: 1.4rem;
   height: 1.4rem;
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
 .cta__button:hover svg {
   transform: translateX(4px);
+}
+
+.cta__button__back:hover svg {
+  transform: translateX(-4px);
 }

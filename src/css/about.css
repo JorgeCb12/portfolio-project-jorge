@@ -11,7 +11,6 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.2rem;
-  
 }
 
 .about__container__text {
@@ -132,50 +131,76 @@
 }
 
 .skills__item--js:hover {
-  background: #f0db4f50;
+  background: rgba(240, 219, 79, 0.098);
+  border: 1px solid rgba(240, 219, 79, 0.98);
 }
 
 .skills__item--html:hover {
-  background: #e54d2650;
+  background: rgba(228, 77, 38, 0.15);
+  border: 1px solid rgba(228, 77, 38, 0.98);
 }
 
 .skills__item--css:hover {
-  background: #3d8fc650;
+  background: rgba(61, 143, 198, 0.15);
+  border: 1px solid rgba(61, 143, 198, 0.98);
 }
+
 .skills__item--ts:hover {
-  background: #007acd50;
+  background: rgba(0, 122, 204, 0.15);
+  border: 1px solid rgba(0, 122, 204, 0.98);
 }
 
 .skills__item--react:hover {
-  background: #5ccbea50;
+  background: rgba(97, 218, 251, 0.12);
+  border: 1px solid rgba(97, 218, 251, 0.98);
 }
+
 .skills__item--nodejs:hover {
-  background: #68a06350;
+  background: rgba(104, 160, 99, 0.15);
+  border: 1px solid rgba(104, 160, 99, 0.98);
 }
+
 .skills__item--git:hover {
-  background: #f34f2950;
+  background: rgba(243, 79, 41, 0.15);
+  border: 1px solid rgba(243, 79, 41, 0.98);
 }
+
 .skills__item--github:hover {
-  background: #c0c0c050;
+  background: rgba(36, 41, 46, 0.12);
+  border: 1px solid rgba(36, 41, 46, 0.98);
 }
+
 .skills__item--figma:hover {
-  background: #ff149350;
+  background: rgba(242, 78, 30, 0.12);
+  border: 1px solid rgba(242, 78, 30, 0.98);
 }
+
 .skills__item--mysql:hover {
-  background: #00800050;
+  background: rgba(0, 117, 143, 0.15);
+  border: 1px solid rgba(0, 117, 143, 0.98);
 }
+
 .skills__item--tailwind:hover {
-  background: #38bdf850;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.98);
 }
+
 .skills__item--pnpm:hover {
-  background: #ff8c0050;
+  background: rgba(249, 115, 22, 0.12);
+  border: 1px solid rgba(249, 115, 22, 0.98);
 }
+
 .skills__item--vite:hover {
-  background: #ffd70050;
+  background: rgba(255, 215, 0, 0.12);
+  border: 1px solid rgba(255, 215, 0, 0.98);
 }
+
 .skills__item--canva:hover {
-  background: #00c4cc50;
+  background: rgba(0, 196, 204, 0.12);
+  border: 1px solid rgba(0, 196, 204, 0.98);
 }
+
 .skills__item--materialui:hover {
-  background: #4682b450;
+  background: rgba(0, 127, 255, 0.12);
+  border: 1px solid rgba(0, 127, 255, 0.98);
 }

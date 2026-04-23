@@ -1,0 +1,39 @@
+.pets__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pets__card {
+  background: rgba(255, 255, 255, 0.098);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.pets__img {
+  width: auto;
+  height: 10rem;
+}
+.pets__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .pets__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .pets__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
