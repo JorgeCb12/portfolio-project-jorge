@@ -28,7 +28,7 @@
     <!-- ICONOS -->
     <link
       rel="shortcut icon"
-      href="/public/icons/favicon.svg"
+      href="public/icons/favicon.svg"
       type="image/x-icon"
     />
     <title>Portafolio | Jorgecb</title>
@@ -38,7 +38,7 @@
     <header class="header">
       <div class="header__container">
         <div class="logo">
-          <img src="/public/icons/logoJorge.png" alt="Personal logo" />
+          <img src="public/icons/logoJorge.png" alt="Personal logo" />
         </div>
         <nav class="navbar" aria-label="Menú principal">
           <ul class="navbar__list">
@@ -80,6 +80,7 @@
         </div>
       </div>
     </header>
+    <!--- FIN SECCION HEADER -->
 
     <!-- SECCION PRINCIPAL -->
     <main>
@@ -123,16 +124,14 @@
               />
             </svg>
           </p>
-          <h2><span class="badge-tech">I'm</span> a Frontend Developer</h2>
+          <h1><span class="badge-tech">I'm</span> a Frontend Developer</h1>
           <p class="hero__info__description">
-            Desarrollador Frontend enfocado en React, Vite y TailwindCSS,
-            creando interfaces modernas y atractivas. Tengo experiencia en la
-            integración de APIs REST y buenas prácticas para mantener código
-            limpio y eficiente. Me centro en desarrollar experiencias de usuario
-            funcionales y optimizadas.
+            Frontend developer especializado en React, Vite y TailwindCSS. Creo
+            interfaces modernas, optimizadas y enfocadas en experiencia de
+            usuario.
           </p>
           <div class="btn__cta">
-            <button class="btn__cta__dowloand">
+            <button class="btn__dowloand">
               Descargar cv
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -170,24 +169,56 @@
         </article>
         <article class="hero__content">
           <div class="hero__content__profile">
-            <img src="/public/img/FotoPerfil.webp" alt="Foto de perfil" />
+            <div class="profile__wrapper">
+              <img src="/public/img/FotoPerfil.webp" alt="Foto de perfil" />
+            </div>
           </div>
           <div class="hero__content__list">
             <ul class="hero__list">
               <li class="hero__list__item">
-                <img src="/public/icons/Github.svg" alt="GitHub" />
+                <a
+                  href="https://github.com/JorgeCb12"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <img src="public/icons/Github.svg" alt="GitHub" />
+                </a>
               </li>
               <li class="hero__list__item">
-                <img src="/public/icons/Gmail.svg" alt="Gmail" />
+                <a
+                  href="mailto:jorgeluiscorralesbarraza272@gmail.com?subject=Contacto&body=Hola, vi tu portafolio y me gustaría hablar contigo"
+                  target="_blank"
+                  aria-label="Gmail"
+                >
+                  <img src="public/icons/Gmail.svg" alt="Gmail" />
+                </a>
               </li>
               <li class="hero__list__item">
-                <img src="/public/icons/LinkedIN.svg" alt="LinkedIn" />
+                <a
+                  href="https://www.linkedin.com/in/jorge-corrales-frontend/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <img src="public/icons/LinkedIN.svg" alt="LinkedIn" />
+                </a>
               </li>
               <li class="hero__list__item">
-                <img src="/public/icons/WhatsApp.svg" alt="WhatsApp" />
+                <a
+                  href="https://wa.me/3245487126"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <img src="public/icons/WhatsApp.svg" alt="WhatsApp" />
+                </a>
               </li>
               <li class="hero__list__item">
-                <img src="/public/icons/Tik Tok.svg" alt="TikTok" />
+                <a
+                  href="https://www.tiktok.com/@jorgedev12"
+                  target="_blank"
+                  aria-label="TikTok"
+                >
+                  <img src="public/icons/Tik Tok.svg" alt="TikTok" />
+                </a>
               </li>
             </ul>
           </div>
@@ -204,7 +235,7 @@
               <p>
                 Soy una persona enfocada en el detalle y en hacer las cosas bien
                 desde la base. Me gusta entender cómo funciona cada parte antes
-                de construir, lo que me permites
+                de construir, lo que me permite
                 <span class="highlighted">escribir código más limpio</span> y
                 estructurado.
               </p>
@@ -529,6 +560,7 @@
         </section>
         <!-- FIN SECCION EXPERIENCIA -->
 
+        <!-- SECCION PROYECTOS -->
         <section class="project__container">
           <h2>Proyectos</h2>
 
@@ -537,7 +569,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/portfolioImg.webp"
+                  src="public/img/portfolioImg.webp"
                   alt="Portafolio personal"
                   loading="lazy"
                 />
@@ -552,7 +584,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -588,7 +620,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/invoiceFlow.webp"
+                  src="public/img/invoiceFlow.webp"
                   alt="Sistema de facturación SaaS"
                   loading="lazy"
                 />
@@ -603,7 +635,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -639,7 +671,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/dashboard.webp"
+                  src="public/img/dashboard.webp"
                   loading="lazy"
                   alt="Dashboard SaaS"
                 />
@@ -654,7 +686,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -690,7 +722,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/TaskManagerApp.webp"
+                  src="public/img/TaskManagerApp.webp"
                   alt="Gestor de tareas"
                   loading="lazy"
                 />
@@ -705,7 +737,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -741,7 +773,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/WeatherDashboard.webp"
+                  src="public/img/WeatherDashboard.webp"
                   alt="Dashboard del clima"
                   loading="lazy"
                 />
@@ -756,7 +788,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -792,7 +824,7 @@
             <article class="project__item">
               <div class="img__container">
                 <img
-                  src="/public/img/calculatorApp.webp"
+                  src="public/img/calculatorApp.webp"
                   alt="Calculadora en Python"
                   loading="lazy"
                 />
@@ -807,7 +839,7 @@
                 <ul class="project__link">
                   <li>
                     <a href="#"
-                      ><img src="/public/icons/Github.svg" alt="GitHub"
+                      ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
@@ -840,6 +872,7 @@
             </article>
           </div>
         </section>
+        <!-- FIN SECCION PROYECTOS -->
 
         <!-- SECCION CONTACTO -->
         <section class="contact" id="contacto">
@@ -973,7 +1006,7 @@
       <div class="footer__container">
         <div class="footer__brand">
           <div class="logo">
-            <img src="/public/icons/logoJorge.png" alt="" />
+            <img src="public/icons/logoJorge.png" alt="" />
           </div>
           <p class="footer__description">
             Desarrollo web moderno enfocado en rendimiento, diseño y experiencia
@@ -995,31 +1028,31 @@
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
-                <img src="/public/icons/Github.svg" alt="GitHub" />
+                <img src="public/icons/Github.svg" alt="GitHub" />
               </a>
             </li>
 
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
-                <img src="/public/icons/Gmail.svg" alt="Gmail" />
+                <img src="public/icons/Gmail.svg" alt="Gmail" />
               </a>
             </li>
 
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
-                <img src="/public/icons/LinkedIN.svg" alt="LinkedIn" />
+                <img src="public/icons/LinkedIN.svg" alt="LinkedIn" />
               </a>
             </li>
 
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
-                <img src="/public/icons/WhatsApp.svg" alt="WhatsApp" />
+                <img src="public/icons/WhatsApp.svg" alt="WhatsApp" />
               </a>
             </li>
 
             <li class="footer__social-item">
               <a href="#" class="footer__social-link">
-                <img src="/public/icons/Tik Tok.svg" alt="TikTok" />
+                <img src="public/icons/Tik Tok.svg" alt="TikTok" />
               </a>
             </li>
           </ul>

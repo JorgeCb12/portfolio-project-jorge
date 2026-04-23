@@ -30,10 +30,9 @@
   gap: 0.2rem;
   padding: 0.5rem 1rem;
 }
-.hero__info h2 {
+.hero__info h1 {
   font-size: 3rem;
   color: #ccc;
-  user-select: none;
 }
 
 .hero__info__name {
@@ -48,7 +47,6 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.098);
   border-radius: 0.2rem;
-  user-select: none;
 }
 .hero__info__name svg {
   width: 1.2rem;
@@ -66,27 +64,26 @@
   line-height: 1.2;
   font-size: 2.4rem;
   letter-spacing: 4px;
-  user-select: none;
 }
 .hero__info__description {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   text-align: justify;
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.8;
   color: #bbb;
-  user-select: none;
 }
 .btn__cta {
   display: flex;
   padding: 1rem 0;
   gap: 1rem;
 }
-.btn__cta__dowloand {
+.btn__dowloand {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  padding: 0.7rem 1.6rem;
+  padding: 0.4rem 1.6rem;
   background: var(--color-secondary);
   border: none;
   border-radius: 0.2rem;
@@ -95,7 +92,7 @@
   font-weight: 500;
   cursor: pointer;
 }
-.btn__cta__dowloand svg {
+.btn__dowloand svg {
   width: 1.7rem;
   height: 1.7rem;
   transition: 0.3s;
@@ -114,7 +111,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   background: var(--color-primary);
   border: none;
   color: var(--color-background);
@@ -133,17 +130,64 @@
   transform: translateX(4px);
 }
 
-.hero__content__profile {
-  display: flex;
-  align-items: center;
+.profile__wrapper {
+  position: relative;
+  width: 280px;
+  height: 300px;
+  z-index: 1;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.hero__content__profile img {
-  width: auto;
-  max-height: 18rem;
-  border-bottom-right-radius: 50%;
+.profile__wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    var(--color-secondary) 0%,
+    transparent 70%
+  );
+  opacity: 0.15;
+  z-index: -2;
+  border-radius: 50%;
+}
+
+.profile__wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   border: 2px solid var(--color-secondary);
+  border-radius: 1rem 1rem 8rem 1rem;
+  transform: translate(12px, 12px);
+  transition:
+    transform 0.4s ease,
+    border-radius 0.4s ease;
+  z-index: -1;
+}
+
+.profile__wrapper:hover::after {
+  transform: translate(0, 0);
+  border-radius: 1rem;
+}
+
+.profile__wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 1rem 1rem 8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  filter: grayscale(40%) contrast(1.1);
+  transition:
+    filter 0.4s ease,
+    border-radius 0.4s ease,
+    transform 0.4s ease;
+}
+
+.profile__wrapper:hover img {
+  filter: grayscale(0%) contrast(1.2);
+  border-radius: 1rem;
+  transform: scale(1.03);
 }
 .hero__content__list {
   display: flex;
@@ -193,4 +237,87 @@
 }
 .hero__list__item__link:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .hero__container {
+    flex-direction: row-reverse;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .hero__info h1 {
+    font-size: 1.2rem;
+  }
+  .hero__info__name {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .badge-tech {
+    font-size: 1.8rem;
+  }
+  .hero__info__name svg {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-secondary);
+  }
+  .hero__info__description {
+    max-width: 320px;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .btn__dowloand {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.85rem;
+  }
+  .btn__dowloand svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .btn__cta__contact {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.75rem;
+  }
+  .btn__cta__contact svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .hero__content__profile {
+    padding: 10px;
+  }
+  .profile__wrapper {
+    width: 250px;
+    height: 280px;
+  }
+}
+
+/* Tablets (vertical) y Celulares grandes */
+@media (max-width: 768px) {
+  .hero__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .hero__info {
+    align-items: center;
+    text-align: center;
+  }
+  .hero__info h1 {
+    font-size: 1.5rem;
+  }
+  .hero__info__name {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hero__info__description {
+    display: none;
+  }
+  .badge-tech {
+    font-size: 2rem;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
 }

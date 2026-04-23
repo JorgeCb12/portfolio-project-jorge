@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 92%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.5rem 1rem;
@@ -93,4 +94,29 @@
 
 .cta__button__back:hover svg {
   transform: translateX(-4px);
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .logo img {
+    height: 1.2rem;
+  }
+  .navbar__list {
+    gap: 0.2rem;
+  }
+  .navbar__item {
+    padding: 0 0.3rem;
+  }
+  .navbar__link {
+    font-size: 0.8rem;
+  }
+  .cta__button a,
+  .cta__button__back a {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }
