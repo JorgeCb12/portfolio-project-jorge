@@ -241,9 +241,9 @@
 
 @media (max-width: 1024px) {
   .hero__container {
+    min-height: 60vh;
     flex-direction: row-reverse;
-    gap: 2rem;
-    padding: 0 1rem;
+    gap: 1rem;
   }
   .hero__info h1 {
     font-size: 1.2rem;
@@ -290,7 +290,6 @@
   }
 }
 
-/* Tablets (vertical) y Celulares grandes */
 @media (max-width: 768px) {
   .hero__container {
     flex-direction: column-reverse;

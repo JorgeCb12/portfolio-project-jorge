@@ -40,6 +40,24 @@
         <div class="logo">
           <img src="public/icons/logoJorge.png" alt="Personal logo" />
         </div>
+        <div class="menu__hamburguer">
+          <button class="open-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
         <nav class="navbar" aria-label="Menú principal">
           <ul class="navbar__list">
             <li class="navbar__item">
@@ -58,28 +76,29 @@
               <a class="navbar__link" href="#">Contacto</a>
             </li>
           </ul>
+          <div class="cta__button">
+            <a href="/src/views/mascotas.html"
+              >Ver mascotas
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </a>
+          </div>
         </nav>
-        <div class="cta__button">
-          <a href="/src/views/mascotas.html"
-            >Ver mascotas
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-            </svg>
-          </a>
-        </div>
       </div>
     </header>
+
     <!--- FIN SECCION HEADER -->
 
     <!-- SECCION PRINCIPAL -->
@@ -1066,45 +1085,8 @@
 
     <!-- SECCION PARTICULAS JS -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-    <script>
-      tsParticles.load("tsparticles", {
-        background: {
-          color: "0c1020",
-        },
-        particles: {
-          number: {
-            value: 50,
-          },
-          color: {
-            value: "#c1ff72",
-          },
-          links: {
-            enable: true,
-            color: "#c1ff72",
-            distance: 200,
-            opacity: 0.3,
-          },
-          move: {
-            enable: true,
-            speed: 1,
-          },
-          size: {
-            value: 3,
-          },
-          opacity: {
-            value: 0.4,
-          },
-        },
-        interactivity: {
-          events: {
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-          },
-        },
-      });
-    </script>
+    <script src="/js/particles.js"></script>
+    <script src="/js/app.js"></script>
     <!-- FIN SECCION PARTICULAS JS -->
   </body>
 </html>
