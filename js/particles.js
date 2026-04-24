@@ -1,4 +1,15 @@
-const isMobile = window.innerWidth < 768;
+// Function to determine the number of particles according to the screen size
+function getParticlesNumber() {
+  const width = window.innerWidth;
+
+  if (width < 768) {
+    return 20; // móvil
+  } else if (width < 1024) {
+    return 30; // tablet
+  } else {
+    return 50; // desktop
+  }
+}
 
 tsParticles.load("tsparticles", {
   background: {
@@ -6,7 +17,7 @@ tsParticles.load("tsparticles", {
   },
   particles: {
     number: {
-      value: isMobile ? 20 : 50,
+      value: getParticlesNumber(),
     },
     color: {
       value: "#c1ff72",

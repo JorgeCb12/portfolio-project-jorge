@@ -1,3 +1,5 @@
+/* Header Styles */
+
 .header {
   padding: 0.5rem 0;
   position: sticky;
@@ -49,6 +51,10 @@
 .navbar__item {
   padding: 0 0.4rem;
 }
+.navbar__link.active {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
 
 .navbar__link {
   position: relative;
@@ -75,6 +81,7 @@
   width: 100%;
 }
 
+/* Call to Action Buttons */
 .cta__button a,
 .cta__button__back a {
   display: inline-flex;
@@ -105,6 +112,7 @@
   transform: translateX(-4px);
 }
 
+/* Mobile Menu */
 .menu__hamburguer {
   display: none;
 }
@@ -130,6 +138,7 @@
   display: block;
 }
 
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .header__container {
     flex-direction: row;
@@ -152,8 +161,11 @@
   .cta__button__back a {
     padding: 0.2rem 0.8rem;
     font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 }
+
+/* Mobile Menu Styles */
 
 @media (max-width: 768px) {
   .header__container {

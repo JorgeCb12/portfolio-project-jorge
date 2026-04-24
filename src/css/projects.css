@@ -1,3 +1,4 @@
+/* Styles for the "Projects" section */
 .project__container {
   display: flex;
   flex-direction: column;
@@ -164,6 +165,7 @@
   padding: 0 0.2rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1024px) {
   .project__list {
     grid-template-columns: repeat(2, 1fr);
@@ -177,6 +179,7 @@
     grid-column: span 1;
   }
 }
+/* Mobile adjustments */
 
 @media (max-width: 768px) {
   .project__container {

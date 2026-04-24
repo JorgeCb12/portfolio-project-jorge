@@ -1,3 +1,5 @@
+/* Styles for the footer section */
+
 .footer {
   background: rgba(255, 255, 255, 0.098);
   backdrop-filter: blur(20px);
@@ -117,6 +119,7 @@
   color: #94a3b8;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer__container {
     flex-direction: column;

@@ -1,3 +1,5 @@
+/* Styles for the "About Me" section */
+
 .about__container {
   display: flex;
   justify-content: center;
@@ -215,6 +217,7 @@
   border: 1px solid rgba(0, 127, 255, 0.98);
 }
 
+/* Responsive styles for the "About Me" section */
 @media (max-width: 1024px) {
   .about__container {
     flex-direction: column;
@@ -247,6 +250,7 @@
   }
 }
 
+/* Mobile styles for the "About Me" section */
 @media (max-width: 768px) {
   .skills__container {
     max-width: 400px;

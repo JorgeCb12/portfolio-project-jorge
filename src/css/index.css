@@ -1,7 +1,9 @@
+/* Global styles and CSS variables for the project */
 html {
   scroll-behavior: smooth;
 }
 
+/* Color and typography variables to maintain design consistency */
 :root {
   --color-primary: #f1f1f1;
   --color-secondary: #c1ff72;
@@ -14,12 +16,14 @@ html {
   --font-heading: "Poppins", sans-serif;
 }
 
+/* Reset of margins, padding and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base styles for the document body, including typography, colors and background */
 body {
   color: var(--color-primary);
   font-family: var(--font-primary);
@@ -29,6 +33,9 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
+/* background particles with negative z-index so they don't interfere with the main content */
+
 #tsparticles {
   position: fixed;
   top: 0;
@@ -38,6 +45,8 @@ body {
   z-index: -1;
 }
 
+/* Styles for the "separator" that visually divides the site sections */
+
 .separator {
   display: flex;
   align-items: stretch;
@@ -46,6 +55,7 @@ body {
   gap: 5rem;
 }
 
+/* Styles for the welcome modal, including the overlay, content and animations */
 .modal-overlay {
   position: fixed;
   inset: 0;

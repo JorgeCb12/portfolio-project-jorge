@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FUENTES -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,8 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-    <!-- ARCHIVOS DE ESTILOS -->
+    <!-- DEVELOPMENT MODE -->
+    <!--
     <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/css/header.css" />
     <link rel="stylesheet" href="src/css/hero.css" />
@@ -25,7 +26,12 @@
     <link rel="stylesheet" href="src/css/contact.css" />
     <link rel="stylesheet" href="src/css/projects.css" />
     <link rel="stylesheet" href="src/css/footer.css" />
-    <!-- ICONOS -->
+     --->
+
+    <!-- PRODUCTION MODE -->
+    <link rel="stylesheet" href="style.min.css" />
+
+    <!-- ICONS -->
     <link
       rel="shortcut icon"
       href="public/icons/favicon.svg"
@@ -34,6 +40,7 @@
     <title>Portafolio | Jorgecb</title>
   </head>
   <body>
+    <!-- WELCOME MODE -->
     <div id="welcome-modal" class="modal-overlay">
       <div class="modal-content notification-top">
         <div class="modal-header">
@@ -47,7 +54,7 @@
         <button id="close-modal" class="modal-btn">Continuar</button>
       </div>
     </div>
-    <!-- SECCION HEADER -->
+    <!-- HEADER SECTION -->
     <header class="header">
       <div class="header__container">
         <div class="logo">
@@ -89,7 +96,7 @@
         <nav class="navbar" aria-label="Menú principal">
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="#home">Inicio</a>
+              <a class="navbar__link active" href="#hero">Inicio</a>
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#about">Sobre mí</a>
@@ -126,19 +133,17 @@
         </nav>
       </div>
     </header>
+    <!--- END OF HEADER SECTION -->
 
-    <!--- FIN SECCION HEADER -->
-
-    <!-- SECCION PRINCIPAL -->
+    <!-- MAIN SECTION -->
     <main>
-      <!-- FONDO CON EFECTO DE PARTICULAS -->
+      <!-- PARTICLE EFFECT BACKGROUND -->
       <div class="bg-glows" aria-hidden="true">
         <div id="tsparticles"></div>
       </div>
       <!-- -------------- -->
-
-      <!-- SECCION HERO -->
-      <section class="hero__container" id="home">
+      <!-- HERO SECTION -->
+      <section class="hero__container" id="hero">
         <article class="hero__info">
           <p class="hero__info__name">
             <svg
@@ -271,10 +276,11 @@
           </div>
         </article>
       </section>
-      <!-- FIN SECCIÓN HERO -->
+      <!-- END OF HERO SECTION -->
 
+      <!-- "SEPARATOR" SECTION TO VISUALLY DIVIDE THE OTHER SECTIONS -->
       <section class="separator">
-        <!-- SECCION SOBRE MÍ -->
+        <!-- ABOUT ME SECTION -->
         <section class="about__container" id="about">
           <section class="about__container__text">
             <article class="about__text">
@@ -427,9 +433,9 @@
             </ul>
           </section>
         </section>
-        <!-- FIN SECCION SOBRE MÍ -->
+        <!-- END OF ABOUT ME SECTION -->
 
-        <!-- SECCION EXPERIENCIA -->
+        <!-- EXPERIENCE SECTION -->
         <section class="experience__container" id="experience">
           <h2>EXPERIENCIA</h2>
           <section class="experience">
@@ -605,9 +611,9 @@
             </article>
           </section>
         </section>
-        <!-- FIN SECCION EXPERIENCIA -->
+        <!-- END OF EXPERIENCE SECTION -->
 
-        <!-- SECCION PROYECTOS -->
+        <!-- PROJECTS SECTION -->
         <section class="project__container" id="projects">
           <h2>Proyectos</h2>
 
@@ -935,9 +941,9 @@
             </article>
           </div>
         </section>
-        <!-- FIN SECCION PROYECTOS -->
+        <!-- END OF PROJECTS SECTION -->
 
-        <!-- SECCION CONTACTO -->
+        <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
           <div class="contact__container">
             <h2 class="contact__title">Trabajemos juntos</h2>
@@ -1061,10 +1067,11 @@
             </div>
           </div>
         </section>
-        <!-- FIN SECCION CONTACTO -->
+        <!-- END OF CONTACT SECTION -->
       </section>
     </main>
 
+    <!-- END OF FOOTER SECTION -->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__brand">
@@ -1126,11 +1133,14 @@
         <p class="footer__copy">© 2026 Todos los derechos reservados Laplace</p>
       </div>
     </footer>
+    <!-- END OF FOOTER SECTION -->
 
-    <!-- SECCION PARTICULAS JS -->
+    <!-- END OF PARTICLE EFFECT SECTION -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script src="js/particles.js"></script>
+    <!-- END OF PARTICLE EFFECT SECTION -->
+
+    <!-- Script for menu logic and other interactions -->
     <script src="js/app.js"></script>
-    <!-- FIN SECCION PARTICULAS JS -->
   </body>
 </html>

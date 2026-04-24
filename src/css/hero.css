@@ -1,3 +1,5 @@
+/* Styles for the Hero section */
+
 .hero__container {
   display: flex;
   justify-content: space-around;
@@ -5,22 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   min-height: calc(100vh - 73px);
-}
-.bg-glows {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.glow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.9;
+  scroll-margin-top: 80px;
 }
 
 .hero__info {
@@ -98,6 +85,8 @@
   transition: 0.3s;
   animation: mover 1s infinite alternate ease-in-out;
 }
+
+/* Animation for the download icon */
 @keyframes mover {
   from {
     transform: translateY(0);
@@ -239,6 +228,8 @@
   transform: scale(1.1);
 }
 
+/* Responsiveness */
+
 @media (max-width: 1024px) {
   .hero__container {
     min-height: 60vh;
@@ -287,6 +278,8 @@
   }
 }
 
+/* Tablets and large phones */
+
 @media (max-width: 768px) {
   .hero__container {
     flex-direction: column-reverse;
@@ -326,8 +319,4 @@
   .btn__cta__contact {
     display: none;
   }
-}
-
-/* Celulares pequeños */
-@media (max-width: 480px) {
 }

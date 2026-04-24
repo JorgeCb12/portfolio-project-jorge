@@ -1,28 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/header.css" />
-    <link rel="stylesheet" href="/src/css/index.css" />
-    <link rel="stylesheet" href="/src/css/mascotas.css" />
-    <title>Mascotas | Jorgecb</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE FILES (Paths from src/views/) -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/mascotas.css" />
+
+    <title>Nuestra Familia | Jorgecb</title>
   </head>
   <body>
+    <!-- REUSED HEADER SECTION -->
     <header class="header">
       <div class="header__container">
         <div class="logo">
-          <img src="/public/icons/logoJorge.png" alt="Personal logo" />
+          <img src="../../public/icons/logoJorge.png" alt="Personal logo" />
         </div>
         <div class="cta__button cta__button__back">
-          <a href="/index.html"
-            ><svg
+          <a href="../../index.html">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="size-6"
             >
               <path
                 stroke-linecap="round"
@@ -35,114 +45,158 @@
         </div>
       </div>
     </header>
-    <main>
-      <header class="pets__title">Mis Mascotas</header>
-      <section class="pets__container">
+
+    <main class="pets-main">
+      <!-- BACKGROUND GLOW EFFECT -->
+      <div class="bg-glows" aria-hidden="true">
+        <div
+          class="glow"
+          style="
+            top: 10%;
+            right: 10%;
+            background: var(--color-secondary);
+            opacity: 0.1;
+          "
+        ></div>
+      </div>
+
+      <h1 class="pets__title">Mi <span class="highlighted">Familia</span></h1>
+
+      <!-- CONTAINER GRID THE PET   S -->
+      <section class="pets__grid">
+        <!-- 1. GOLIAT -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota1.webp" alt="Gato blanco" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota1.webp" alt="Gato Goliat" />
+            <span class="pets__tag">Gato</span>
           </div>
-          <h3>GOLIAT</h3>
-          <p>
-            Goliat es mi gato blanco. Es muy tranquilo y le gusta pasar la mayor
-            parte del tiempo descansando cerca de mí. Aunque es independiente,
-            siempre busca compañía cuando quiere cariño.
-          </p>
+          <div class="pets__content">
+            <h3>GOLIAT</h3>
+            <p>
+              Gato blanco muy tranquilo. Le encanta pasar el tiempo descansando
+              y buscando compañía cuando quiere cariño.
+            </p>
+          </div>
         </article>
 
+        <!-- 2. TOBY -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota2.webp" alt="Perro pequeño café" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota2.webp" alt="Perro Toby" />
+            <span class="pets__tag">Perro</span>
           </div>
-          <h3>TOBY</h3>
-          <p>
-            Toby es mi perro pequeño de color café. Es muy juguetón, siempre
-            tiene energía y le encanta correr y llamar la atención. Es el más
-            activo de todos.
-          </p>
+          <div class="pets__content">
+            <h3>TOBY</h3>
+            <p>
+              Perro pequeño café de energía pura. Es el más juguetón de todos y
+              siempre busca llamar la atención.
+            </p>
+          </div>
         </article>
 
+        <!-- 3. SHADOW -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota3.webp" alt="Gato gris" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota3.webp" alt="Gato Shadow" />
+            <span class="pets__tag">Gato</span>
           </div>
-          <h3>SHADOW</h3>
-          <p>
-            Shadow es mi gato gris. Es curioso y siempre está observando todo lo
-            que pasa. A veces es juguetón, pero también disfruta mucho dormir en
-            lugares cómodos.
-          </p>
+          <div class="pets__content">
+            <h3>SHADOW</h3>
+            <p>
+              Gato gris muy curioso. Le apasiona observar todo lo que pasa a su
+              alrededor y dormir en sitios cómodos.
+            </p>
+          </div>
         </article>
 
+        <!-- 4. MAX -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota4.webp" alt="Perro grande blanco" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota4.webp" alt="Perro Max" />
+            <span class="pets__tag">Perro</span>
           </div>
-          <h3>MAX</h3>
-          <p>
-            Max es mi perro grande de color blanco. Es fuerte, protector y muy
-            leal. Aunque impone por su tamaño, en realidad es muy noble y
-            tranquilo.
-          </p>
+          <div class="pets__content">
+            <h3>MAX</h3>
+            <p>
+              Perro grande blanco, fuerte y leal. A pesar de su imponente
+              tamaño, es un guardián muy noble y pacífico.
+            </p>
+          </div>
         </article>
 
+        <!-- 5. LUNA -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota5.webp" alt="Perro pequeño peludo" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota5.webp" alt="Perra Luna" />
+            <span class="pets__tag">Perro</span>
           </div>
-          <h3>LUNA</h3>
-          <p>
-            Luna es mi perrita pequeña y peludita. Es muy cariñosa y siempre
-            busca estar conmigo. Le encanta que la consientan y llamar la
-            atención.
-          </p>
+          <div class="pets__content">
+            <h3>LUNA</h3>
+            <p>
+              Perrita peluda y pequeña. Su mayor felicidad es estar acompañada y
+              que la consientan todo el día.
+            </p>
+          </div>
         </article>
 
+        <!-- 6. CHISPA -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota6.webp" alt="Hámster marrón" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota6.webp" alt="Hámster Chispa" />
+            <span class="pets__tag">Hámster</span>
           </div>
-          <h3>CHISPA</h3>
-          <p>
-            Chispa es mi hámster de color marrón. Es pequeño pero muy activo,
-            siempre está explorando y moviéndose. Me entretiene mucho verlo
-            jugar.
-          </p>
+          <div class="pets__content">
+            <h3>CHISPA</h3>
+            <p>
+              Hámster marrón pequeño y veloz. Un explorador incansable que
+              siempre está moviéndose en su hábitat.
+            </p>
+          </div>
         </article>
 
+        <!-- 7. MILO & NEO -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota7.webp" alt="Dos gatos grises" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota7.webp" alt="Milo y Neo" />
+            <span class="pets__tag">Gatos</span>
           </div>
-          <h3>MILO & NEO</h3>
-          <p>
-            Milo y Neo son mis dos gatos grises. Siempre están juntos, juegan
-            entre ellos y parecen entenderse perfectamente. Son como hermanos
-            inseparables.
-          </p>
+          <div class="pets__content">
+            <h3>MILO & NEO</h3>
+            <p>
+              Dúo dinámico de gatos grises. Son inseparables, juegan juntos y
+              tienen un vínculo único de hermanos.
+            </p>
+          </div>
         </article>
 
+        <!-- 8. ZEUS -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota8.webp" alt="Gato sabio" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota8.webp" alt="Gato Zeus" />
+            <span class="pets__tag">Gato</span>
           </div>
-          <h3>ZEUS</h3>
-          <p>
-            Zeus es mi gato más tranquilo. Tiene una mirada muy seria, como si
-            entendiera todo. Le gusta estar solo y observar, es el más calmado
-            de todos.
-          </p>
+          <div class="pets__content">
+            <h3>ZEUS</h3>
+            <p>
+              El sabio de la casa. Un gato de mirada profunda y calma infinita
+              que prefiere observar el mundo en silencio.
+            </p>
+          </div>
         </article>
 
+        <!-- 9. SNOW -->
         <article class="pets__card">
-          <div class="pets__img">
-            <img src="/public/img/mascota9.webp" alt="Conejo blanco" />
+          <div class="pets__img-wrapper">
+            <img src="../../public/img/mascota9.webp" alt="Conejo Snow" />
+            <span class="pets__tag">Conejo</span>
           </div>
-          <h3>SNOW</h3>
-          <p>
-            Snow es mi conejo blanco. Es muy dócil y suave. Le gusta explorar
-            poco a poco y es una mascota muy tranquila.
-          </p>
+          <div class="pets__content">
+            <h3>SNOW</h3>
+            <p>
+              Conejo blanco dócil y suave. Un pequeño compañero tranquilo que
+              disfruta explorando rincones nuevos.
+            </p>
+          </div>
         </article>
       </section>
     </main>
