@@ -60,6 +60,63 @@
   line-height: 1.8;
   color: #bbb;
 }
+/* Botón glassmorphism */
+.btn__change {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  padding: 0.5rem 1.4rem;
+  margin-top: 0.5rem;
+
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.3rem;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.btn__change:hover {
+  background: rgba(193, 255, 114, 0.15);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 12px rgba(193, 255, 114, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Click */
+.btn__change:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 6px rgba(193, 255, 114, 0.2);
+}
+
+/* Opcional: efecto glow sutil */
+.btn__change::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at top left,
+    rgba(193, 255, 114, 0.25),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn__change:hover::before {
+  opacity: 1;
+}
 .btn__cta {
   display: flex;
   padding: 1rem 0;
@@ -317,6 +374,9 @@
     gap: 0.6rem;
   }
   .btn__cta__contact {
+    display: none;
+  }
+  .btn__change {
     display: none;
   }
 }
