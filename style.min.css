@@ -103,11 +103,6 @@ body {
   box-shadow: 0 0 10px var(--color-secondary);
   animation: 1.5s infinite pulse;
 }
-.btn__dowloand,
-.modal-btn {
-  border: none;
-  cursor: pointer;
-}
 @keyframes pulse {
   0%,
   100% {
@@ -128,8 +123,10 @@ body {
 .modal-btn {
   width: 100%;
   color: #000;
+  border: none;
   padding: 0.6rem;
   border-radius: 0.4rem;
+  cursor: pointer;
   transition: 0.3s;
 }
 .modal-hidden {
@@ -288,6 +285,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.098);
   border-radius: 0.2rem;
 }
+.btn__change,
+.btn__dowloand {
+  align-items: center;
+  cursor: pointer;
+}
 .hero__info__name svg {
   width: 1.2rem;
   height: 1.2rem;
@@ -312,6 +314,48 @@ body {
   line-height: 1.8;
   color: #bbb;
 }
+.btn__change {
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.4rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-family: var(--font-heading);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.3rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+.btn__change:hover {
+  background: rgba(193, 255, 114, 0.15);
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 12px rgba(193, 255, 114, 0.3);
+  transform: translateY(-2px);
+}
+.btn__change:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 6px rgba(193, 255, 114, 0.2);
+}
+.btn__change::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at top left,
+    rgba(193, 255, 114, 0.25),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn__change:hover::before {
+  opacity: 1;
+}
 .btn__cta {
   display: flex;
   padding: 1rem 0;
@@ -325,57 +369,12 @@ body {
   font-family: var(--font-heading);
 }
 .btn__dowloand {
-  align-items: center;
   justify-content: center;
   gap: 0.6rem;
   padding: 0.4rem 1.6rem;
   background: var(--color-secondary);
+  border: none;
   border-radius: 0.2rem;
-}
-.btn_change {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 0.5rem 1.4rem;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  font-family: var(--font-heading);
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 0.3rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn_change:hover {
-  background: rgba(193, 255, 114, 0.15);
-  border-color: var(--color-secondary);
-  box-shadow: 0 0 12px rgba(193, 255, 114, 0.3);
-  transform: translateY(-2px);
-}
-.btn_change:active {
-  transform: scale(0.96);
-  box-shadow: 0 0 6px rgba(193, 255, 114, 0.2);
-}
-.btn_change::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(
-    circle at top left,
-    rgba(193, 255, 114, 0.25),
-    transparent 70%
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.btn_change:hover::before {
-  opacity: 1;
 }
 .btn__dowloand svg {
   width: 1.7rem;
@@ -1437,6 +1436,7 @@ body {
     cursor: pointer;
     color: #fff;
   }
+  .btn__change,
   .btn__cta__contact,
   .hero__info__description {
     display: none;
